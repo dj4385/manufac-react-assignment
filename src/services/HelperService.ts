@@ -4,9 +4,10 @@ export class HelperService {
 
     // function to calculate the mean
     static calculateMean(wineDataList: IWineData[], key: string): number {
-        const sum = wineDataList.reduce((acc: number, wineData: any) => {
-            return acc + typeof(wineData[key]) === 'string' ? +wineData[key] : wineData[key]
-        }, 0);
+        let sum: number = 0;
+        wineDataList.forEach((data: any) => {
+            sum += +data[key];
+        })
         return +(sum / wineDataList.length).toFixed(3);    
     }
 
@@ -35,9 +36,9 @@ export class HelperService {
             modeFrequency[value] = (+modeFrequency[value] || 0) + 1;
             if (modeFrequency[value] > maxCount) {
                 maxCount = modeFrequency[value];
-                mode = modeFrequency[value];
+                mode = value;
             } else if (modeFrequency[value] === maxCount) {
-                mode = modeFrequency[value];
+                mode = value;
             }
         });
         return mode;
