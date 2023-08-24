@@ -51,5 +51,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 # manufac-react-assignment
-![Screenshot from 2023-08-24 10-32-03](https://github.com/dj4385/manufac-react-assignment/assets/30724457/5e2ae8e9-22be-4a5e-ba29-f005e2a1200b)
+![Screenshot from 2023-08-24 12-45-18](https://github.com/dj4385/manufac-react-assignment/assets/30724457/ca132717-9802-408f-9d24-20094ebc155b)
+
 
