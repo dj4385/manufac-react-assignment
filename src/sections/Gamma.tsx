@@ -10,7 +10,7 @@ function Gamma() {
     const analyticsList: string[] = ['Mean', 'Median', 'Mode']
     let wineDataList: IWineData[] = useContext(WineDataContext);
 
-
+    // function to calculate the class-wise mean, median mode
     const calculateClassBaseData = () => {
         wineDataList = wineDataList.map((wineData: IWineData) => {
             wineData.Gamma = +((wineData.Ash * wineData.Hue) / wineData.Magnesium).toFixed(3);

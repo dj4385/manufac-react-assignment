@@ -10,6 +10,7 @@ function Flavanoids() {
     const analyticsList: string[] = ['Mean', 'Median', 'Mode']
     const wineDataList: IWineData[] = useContext(WineDataContext);
 
+    // function to calculate the class-wise mean, median mode
     const calculateClassBaseData = () => {
         let groupedWineDataList = HelperService.transfromWineDataToGroupedWineData(wineDataList);    
         if(groupedWineDataList?.length) {

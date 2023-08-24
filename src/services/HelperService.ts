@@ -1,6 +1,8 @@
 import { IGroupedWineData, IWineData } from "../models";
 
 export class HelperService {
+
+    // function to calculate the mean
     static calculateMean(wineDataList: IWineData[], key: string): number {
         const sum = wineDataList.reduce((acc: number, wineData: any) => {
             return acc + typeof(wineData[key]) === 'string' ? +wineData[key] : wineData[key]
@@ -8,8 +10,9 @@ export class HelperService {
         return +(sum / wineDataList.length).toFixed(3);    
     }
 
+    // function to calculate the median
     static calculateMedian(wineDataList: IWineData[], key: string): number {
-        let medianValues: number[] = [];
+        const medianValues: number[] = [];
         wineDataList.forEach((data: any) => {
             medianValues.push(typeof(data[key]) === 'string' ? +data[key] : data[key])
         })
@@ -22,10 +25,11 @@ export class HelperService {
         }
     }
 
+    // function to calculate the mode
     static calculateMode(wineDataList: IWineData[], key: string): number {
         let modeFrequency: any = {};
         let maxCount: number = 0;
-        let mode = 0;
+        let mode: number = 0;
         wineDataList.forEach((wineData: any) => {
             const value = typeof(wineData[key]) === 'string' ? +wineData[key] : wineData[key];
             modeFrequency[value] = (+modeFrequency[value] || 0) + 1;
@@ -39,6 +43,7 @@ export class HelperService {
         return mode;
     }
 
+    // function to group the wine data based on Alcohol
     static transfromWineDataToGroupedWineData(wineDataList: IWineData[]): IGroupedWineData[] {
         const classList: number[] = [];
         const groupedWineDataList: IGroupedWineData[] = [];
