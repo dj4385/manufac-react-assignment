@@ -1,8 +1,14 @@
+# Node version
+This project uses node v16.20.0.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+In the project directory, you can install dependencies:
+
+### `yarn install`
 
 In the project directory, you can run:
 
@@ -45,3 +51,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 # manufac-react-assignment
+![Screenshot from 2023-08-24 10-32-03](https://github.com/dj4385/manufac-react-assignment/assets/30724457/5e2ae8e9-22be-4a5e-ba29-f005e2a1200b)
+
