@@ -7,7 +7,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px
+}
+
+.table-wrapper table {
+  width: 100%
+}
+
+.table-wrapper table thead tr {
+  background: #151515;
+  color: #ffffff;
+}
+
+.table-wrapper table thead tr th {
+  padding: 10px;
+}
+
+.table-wrapper table tbody tr td {
+  padding: 5px;
+  background: #e2e2e2;
+  text-align: center;
 }
